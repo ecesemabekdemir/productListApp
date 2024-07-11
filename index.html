@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/urunListeleme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="assets/js/urunListeleme.js" defer></script>
+    <title>Product list App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="productHeader" >
+        <h1>Ürün Listesi</h1>
+        <button id="addProductBtn">Ekle</button>
+      </header>
+
+      <div class="productsList" id="productsContainer"></div>
+
+      <dialog id="modal">
+        <h2 class="modelAddNew">Ürün Ekle</h2>
+        <h2 class="modelEdit"></h2>
+      <form method="dialog" autocomplete="off" id="productsForm">
+        <p><input class="productName" required type="text" name="name" placeholder="Ürün adı giriniz"/></p>
+        <p><input class="price" required type="number" name="price" placeholder="Fiyatı giriniz" /></p>
+        <select name="category" id="category" aria-placeholder="Kategori Seçiniz">
+          <option value="Teknoloji">Teknoloji</option>
+          <option value="Tekstil">Tekstil</option>
+          <option value="Kozmetik">Kozmetik</option>
+          <option value="Giyim">Giyim</option>
+          <option value="Kitap">Kitap</option>
+        </select>
+        <input class="img" type="text" name="file" placeholder="Görsel ekle" />
+        <button class="modelAddNew">Ekle</button> 
+        <button  class="modelEdit">Düzenle</button>
+        <button type="button" onclick="productsForm.reset();modal.close();">Vazgeç</button></p>
+        <input type="hidden" name="id" value="">
+      </form>
+    </dialog>
+
+  </div>
+  </body>
+</html>

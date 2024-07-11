@@ -1,0 +1,158 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #007BFF;
+}
+
+.productHeader h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+#addProductBtn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addProductBtn:hover {
+  background-color: #0056b3;
+}
+
+.productsList {
+  margin: 20px 0;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.productEditControls {
+  display: flex;
+  gap: 10px;
+}
+
+.productEditBtn, .productDeleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #007BFF;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.productEditBtn:hover, .productDeleteBtn:hover {
+  background-color: #0056b3;
+}
+
+.productEditBtn svg, .productDeleteBtn svg {
+  width: 15px;
+  height: 15px;
+}
+
+#modal {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modelAddNew, .modelEdit {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+#productsForm p {
+  margin: 10px 0;
+}
+
+#productsForm input, #productsForm select, #productsForm button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#productsForm button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#productsForm button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.product-list {
+  margin-top: 20px;
+}
+
+.category h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
